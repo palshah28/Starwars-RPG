@@ -79,7 +79,7 @@ if (gameStarted == 1) {
 
 
 function chooseDefender() {
-    alert($(this).attr("data-value"));
+    // alert($(this).attr("data-value"));
     var defender = $("<div>");
     defender.addClass("defender");
     defender.attr("data-value", $(this).attr("data-value"));
