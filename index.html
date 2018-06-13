@@ -14,8 +14,12 @@
 </head>
 <body>
     <div class="container">
-        <div class="card-body bodysize"> 
+            <div id="rules"><h8>Rules : Please choose your character to fight with other enemies. You will choose enemy by clicking enemy session. When player clicks attack, the oppnent will loose HP. After your player defeats enemy, you can choose other enemy. Your player has to defeat all enemies to win the game. Your player lose HP based on counter attack power of your opponent</h8></div>  
         
+        <div class="card-body bodysize"> 
+            <div>
+                <h8><b>Your Character</b></h8> 
+            </div>
             <div class="flex-container" id="players">
                 <div id="player1" class="player" data-value="1">
                 <img src="black_widow.jpg"> 
@@ -39,27 +43,27 @@
                     <h7>150</h7> 
                 </div>
             </div>
-            <div>
-                <h7>Your Character</h7> 
-            </div>
+            <h8><b>Enemies Available for Fight</b></h8>   
             <div class="flex-container" id="enemies">
                                    
-                    
+               
             </div>
 
                 <div id="buttons">
-                    <h7>Enemies Available for Fight</h7>
+                    
                     <!-- <h5>Fight Section</h5>  --><BR>
                     <button onclick="attack()" class="btn btn-danger btn-sm">Attack</button> 
-                    <h7>Defender</h7>                
+                    <h7 id="currentScore"></h7>  
+                    <!-- <h7>Defender</h7>                 -->
                 </div>
+                <h8><b>Defender</b></h8>     
             <div class="flex-container" id="currentdDefender">
                         
            
                                         
-              <div id="currentScore"></div>          
+                      
             </div>    
-        </div>
+           </div>
     </div> 
     <script type ="text/javascript" src="starwars.js"></script>
 </body>
